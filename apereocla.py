@@ -29,6 +29,10 @@ CLAURL = BASEURL + '5'
 
 
 def github_users():
+    '''Returns a generator for the lists of Github usernames associated with
+    completed Apereo ICLAs. The data for this is retrieved from
+    licensing.apereo.org.
+    '''
     req = requests.get(GHURL)
     assert req.ok
     soup = BeautifulSoup(req.text, 'html.parser')
@@ -51,8 +55,16 @@ def _cla(field):
 
 
 def icla():
+    '''Returns a generator for the lists of persons (names) associated with
+    completed Apereo ICLAs. The data for this is retrieved from
+    licensing.apereo.org.
+    '''
     return _cla(0)
 
 
 def ccla():
+    '''Returns a generator for the lists of organization names associated with
+    completed Apereo CCLAs. The data for this is retrieved from
+    licensing.apereo.org.
+    '''
     return _cla(1)
