@@ -32,8 +32,18 @@ Example
 Print list of all Github usernames with a completed Apereo ICLA:
 
 ```python
-from apereocla import apereocla.github_users
+from apereocla import github_users
 
 for user in github_users():
     print(user)
-````
+```
+
+Running this script yields:
+```bash
+% python list-github-user-with-icla.py
+Aaron-G-9
+acspike
+adrianmticarum
+alejandrogj
+…
+```
