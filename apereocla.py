@@ -7,7 +7,7 @@ This is a simple python library to parse and access the Apereo Foundation's
 lists include those who have submitted Apereo Foundation CLAs, as well as those
 who had previously submitted CLAs with Jasig or Sakai.
 
-The data are retrieved from the official lists at:
+The data is retrieved from the official lists at:
 
 > http://licensing.apereo.org/
 
