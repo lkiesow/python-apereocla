@@ -1,6 +1,9 @@
 python-apereocla
 ================
 
+[![Build Status](https://travis-ci.org/lkiesow/python-apereocla.svg?branch=master)
+](https://travis-ci.org/lkiesow/python-apereocla)
+
 This is a simple python library to parse and access the Apereo Foundation's
 lists include those who have submitted Apereo Foundation CLAs, as well as those
 who had previously submitted CLAs with Jasig or Sakai.
