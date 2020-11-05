@@ -7,4 +7,4 @@ if __name__ == '__main__':
     assert 'Lars Kiesow' in apereocla.icla()
     assert 'ELAN e.V.' in apereocla.ccla()
     # check non-existing cla
-    assert not 'not-lkiesow' in apereocla.github_users()
+    assert 'not-lkiesow' not in apereocla.github_users()
