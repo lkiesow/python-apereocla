@@ -19,6 +19,7 @@ Github user names associated with ICLAs.
 
 from bs4 import BeautifulSoup
 import requests
+import sys
 
 
 BASEURL = 'https://docs.google.com' \
@@ -68,3 +69,20 @@ def ccla():
     licensing.apereo.org.
     '''
     return _cla(1)
+
+
+def usage():
+    print(f'Usage: {sys.argv[0]} [ -g github_user | -n name | -c company ]')
+
+
+def main():
+    if len(sys.argv) != 3:
+        usage()
+    elif sys.argv[1] == '-g':
+        assert sys.argv[2] in github_users()
+    elif sys.argv[1] == '-n':
+        assert sys.argv[2] in icla()
+    elif sys.argv[1] == '-c':
+        assert sys.argv[2] in ccla()
+    else:
+        usage()
