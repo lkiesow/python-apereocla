@@ -1,8 +1,7 @@
 python-apereocla
 ================
 
-[![Build Status](https://travis-ci.org/lkiesow/python-apereocla.svg?branch=master)
-](https://travis-ci.org/lkiesow/python-apereocla)
+[![Build Status](https://github.com/lkiesow/python-apereocla/actions/workflows/test.yml/badge.svg)](https://github.com/lkiesow/python-apereocla/actions/workflows/test.yml)
 
 This is a simple python library to parse and access the Apereo Foundation's
 lists include those who have submitted Apereo Foundation CLAs, as well as those
@@ -18,6 +17,27 @@ Github user names associated with ICLAs.
 
 Usage
 -----
+
+Install with
+
+```
+❯ pip install apereocla
+```
+
+Run the tool with:
+
+```
+❯ apereocla           
+Usage: /home/lars/.local/bin/apereocla [ -g github_user | -n name | -c company ]
+```
+
+For example, to check if the GitHub user `lkiesow` submitted an ICLA, run:
+```
+❯ apereocla -g lkiesow
+```
+
+Library
+-------
 
 The library consists of three methods:
 
