@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='apereocla',
-    version='1',
+    version='2',
     py_modules=['apereocla'],
     description='Easy access to list of completed Apereo CLAs',
     author='Lars Kiesow',
